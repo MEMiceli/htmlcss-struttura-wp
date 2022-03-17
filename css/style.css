@@ -17,27 +17,48 @@
     background-color: yellow;
     margin-top: 20px;
 }
+:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .seconda-sezione{
     height: 600px;
     background-color: blue;
+    margin:auto;
     margin-top: 20px;
+
 }
-.seconda-sezione > div,header{
-    background-color: cadetblue;
+/* .seconda-sezione > div,header{
+    background-color: cadetblue; */
 }
 .titolo-sezione{
     height: 200px;
+    margin-bottom: 20px;
 }
 .colonna-sinistra{
-    width: 20%;
+    width: calc(20% - 20px);
+    height: 560px;
+    float: left;
+    margin-right: 20px;
+    background-color: chartreuse;
+    
 }
 .colonna-centrale{
     width: 60%;
+    height: 560px;
+    float: left;
+    background-color: coral;
 }
 .colonna-destra{
-    width: 20%;
+    width: calc(20% - 20px);
+    height: 560px;
+    float: left;
+    margin-left: 20px; 
+    background-color: chartreuse;
 }
 footer{
     height: 150px;
     background-color: violet;
+    margin-top: 20px;
 }
